@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG OLED Frageboden</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <h1>LG OLED Umfrage</h1>
+</header>
+<main class="main">
+    <div class="h4">
+        <h4>Erzähle uns über deine Erfahrungen über deinen LG OLED TV.</h4>
+    </div>
+    <div class="name">
+        <legend>Name:</legend>
+        <input type="text" placeholder="Dein Name" id="name">
+    </div>
+    <div class="email">
+        <legend>Email:</legend>
+        <input type="email" placeholder="Deine Email" id="email">
+    </div>
+    <div class="bewertung">
+        <label for="bewertung">Auf einer Skala von 1 - 10, wie zufrieden bist du mit deinem TV-Gerät?</label>
+        <input type="number" min="1" max="10" id="bewertung" placeholder="Bewerte von 1 bis 10">
+    </div>
+    <div class="dropdown">
+        <label for="dropdown">Wo nutzt du deinen TV?</label>
+        <select name="nutzungsort" id="dropdown">
+            <option value="wohnzimmer">Wohnzimmer</option>
+            <option value="schlafzimmer">Schlafzimmer</option>
+            <option value="esszimmer">Esszimmer</option>
+            <option value="gästezimmer">Gästezimmer</option>
+            <option value="garage">Garage</option>
+            <option value="garten">Garten</option>
+            <option value="wohnmobil">Wohnmobil</option>
+        </select>
+    </div>
+    <div class="radio">
+        <span>Zu welcher Tageszeit benutzt du den LG am liebsten/meisten?</span>
+        <label><input type="radio" name="tageszeit" id="radio" value="morgens"> Morgens</label>
+        <label><input type="radio" name="tageszeit" id="radio" value="mittags"> Mittags</label>
+        <label><input type="radio" name="tageszeit" id="radio" value="abends"> Abends</label>
+        <label><input type="radio" name="tageszeit" id="radio" value="nachts"> Nachts</label>
+    </div>
+    <div>
+        <span>Was sind deine Lieblingsfeater´s?</span>
+        <label><input type="checkbox" name="feater" id="checkbox" value="4k"> 4K</label>
+        <label><input type="checkbox" name="feater" id="checkbox" value="hdr"> HDR</label>
+        <label><input type="checkbox" name="feater" id="checkbox" value="dolby"> Dolby Vision</label>
+        <label><input type="checkbox" name="feater" id="checkbox" value="smart"> Smart TV</label>
+        <label><input type="checkbox" name="feater" id="checkbox" value="gaming"> Gaming</label>
+    </div>
+    <div>
+        <label for="experience">Erzähle uns deine positivste Erfahrung mit diesem Gerät.</label>
+        <textarea name="experience" id="experience" rows="8" maxlength="500" placeholder="Deine Erfahrung..."></textarea>
+    </div>
+    <div>
+        <button>Senden</button>
+    </div>    
+</main> 
+</body>
+</html>

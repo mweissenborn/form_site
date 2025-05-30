@@ -1,0 +1,110 @@
+@font-face {
+        font-family: 'Poppins';
+        src: url('font/Poppins/Poppins-Regular.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+@font-face {
+        font-family: 'Poppins';
+        src: url('font/Poppins/Poppins-Italic.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+@font-face {
+        font-family: 'Poppins';
+        src: url('font/Poppins/Poppins-Bold.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+:root {
+    /* Farbpalette */
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #D1D5F0;
+    --error-text-color: #FF3B5E;
+    --success-text-color: #3CF5C2;
+    --button-color: #7A35FF;
+    --button-hover-color: #D66EFF;
+    --background-glass: rgba(255, 255, 255, 0.1);
+    --form-border-color: 	#DDE2F3;
+    --box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    --input-outline: #B388FF;
+    --input-placeholder-color: #C5CAE9;
+    --scrollbar-color: 	rgba(255, 255, 255, 0.2);
+    --scrollbar-thumb-color: #D1D5F0;
+    --scrolbar-thumb-hover: #D66EFF;
+
+    /* Schriftarten */
+    
+    --font-poppins: "Poppins", "Inter", -apple-system, sans-serif;
+
+    /* Abstände */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+
+    /* Responsive Breiten */
+    --max-content-width: 1200px;
+
+    /* Z-Index */
+    --z-index-scrollbar: 1000;
+    --z-index-input: 999;
+    --z-index-overlay: 998;
+    --z-index-background: 800;
+    
+}
+
+/* Box Modell für alle Elemente */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Basis HTML */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Body-Stile */
+body {
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Responsive Media */
+img,
+picture,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+:focus-visible {
+    outline: 2px solid var(--input-outline);
+    outline-offset: 2px;
+}
+
+/* Links */
+a {
+    background-color: transparent;
+    text-decoration-skip-ink: auto;
+}
+
+/* Buttons */
+button {
+    background-color: var(--button-color);
+    border: var(--input-outline);
+    padding: 0;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
