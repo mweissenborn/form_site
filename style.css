@@ -49,6 +49,10 @@ textarea::placeholder {
     height: 30px;
  }
 
+ legend, label, span {
+    color: var(--secondary-text-color);
+ }
+
 div {
     display: flex;
     flex-direction: column;
@@ -149,3 +153,17 @@ div {
     align-items: center;
     margin: auto;
 }
+button {
+    background-color: var(--button-color);
+    color: var(--secondary-text-color);
+    border: 1px solid var(--form-border-color);
+    width: 80px;
+    height: 30px;
+    border-radius: 15px
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--success-text-color);
+}
+    
