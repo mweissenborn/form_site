@@ -1,3 +1,10 @@
+body {
+    background-image: url('/img/main_background_480.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--primary-text-color);
+}
 .header {
     display: flex;
     justify-content: center;
@@ -6,14 +13,41 @@
 .main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: start;
     max-width: 80%;
     margin: 0 auto;
     gap: 20px;
-    border: 1px solid red;
-    background-color: grey;
-    max-width: 1000px;
+    width: 75vw;
+    max-width: 750px;
+
+    /* Morphism */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--form-border-color);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 16px;
+    color: #EDEDED;
 }
+input:focus, textarea:focus, select:focus{
+    outline: 2px solid var(--input-outline);
+    outline-offset: 2px;
+}
+    
+input, textarea, select {
+    background-color: #22253a;
+    color: var(--primary-text-color);
+    border: 1px solid var(--form-border-color);
+    border-radius: 6px;
+}
+input::placeholder,
+textarea::placeholder {
+    color: var(--input-placeholder-color);
+    opacity: 1;
+}
+ input[type="text"],input[type="email"], input[type="number"], select[id="dropdown"] {
+    height: 30px;
+ }
 
 div {
     display: flex;
@@ -39,7 +73,6 @@ div {
     width: 60vw;
     max-width: 400px;
     margin-left: 0.4rem;
-    margin-right: 0.4rem;
 }
 
 .email {
@@ -51,6 +84,7 @@ div {
 
 .email input {
     width: 60vw;
+    max-width: 400px;
     margin-left: 0.4rem;
 }
 
@@ -59,12 +93,18 @@ div {
     gap: var(--spacing-xs);
     margin-left: var(--spacing-sm);
      margin-right: var(--spacing-sm);
-    max-width: 85%;
+     max-width: 400px;
 }
 
-.experience,
 .bewertung input {
     width: 60vw;
+    max-width: 400px;
+    margin-left: 0.4rem;
+}
+
+.experience{
+    width: 60vw;
+    max-width: 400px;
     margin-left: 0.4rem;
 }
 
@@ -78,6 +118,7 @@ div {
 
 .dropdown select {
     width: 40vw;
+    max-width: 400px;
     margin-left: 0.4rem;
 }
 
@@ -102,3 +143,9 @@ div {
      margin-right: var(--spacing-sm);
 }
 
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
