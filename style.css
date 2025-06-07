@@ -12,6 +12,7 @@
     gap: 20px;
     border: 1px solid red;
     background-color: grey;
+    max-width: 1000px;
 }
 
 div {
@@ -19,21 +20,33 @@ div {
     flex-direction: column;
 }
 
+.h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
+}
+
 .name {
     display: flex;
     gap: var(--spacing-xs);
     margin-left: var(--spacing-sm);
+     margin-right: var(--spacing-sm);
 }
 
 .name input {
     width: 60vw;
+    max-width: 400px;
     margin-left: 0.4rem;
+    margin-right: 0.4rem;
 }
 
 .email {
     display: flex;
     gap: var(--spacing-xs);
     margin-left: var(--spacing-sm);
+     margin-right: var(--spacing-sm);
 }
 
 .email input {
@@ -45,9 +58,11 @@ div {
     display: flex;
     gap: var(--spacing-xs);
     margin-left: var(--spacing-sm);
+     margin-right: var(--spacing-sm);
     max-width: 85%;
 }
 
+.experience,
 .bewertung input {
     width: 60vw;
     margin-left: 0.4rem;
@@ -57,18 +72,33 @@ div {
     display: flex;
     gap: var(--spacing-xs);
     margin-left: var(--spacing-sm);
+     margin-right: var(--spacing-sm);
 }
+
 
 .dropdown select {
     width: 40vw;
     margin-left: 0.4rem;
 }
 
+.checkbox,
 .radio {
     display: flex;
     gap: var(--spacing-xs);
     margin-left: var(--spacing-sm);
+     margin-right: var(--spacing-sm);
+     
 }
+
+.checkbox label,
 .radio label {
     margin-left: 0.4rem;
 }
+
+.experience {
+    display: flex;
+    gap: var(--spacing-xs);
+    margin-left: var(--spacing-sm);
+     margin-right: var(--spacing-sm);
+}
+
