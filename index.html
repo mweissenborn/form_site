@@ -17,47 +17,75 @@
         <h4>Erzähle uns über deine Erfahrungen über deinen LG OLED TV.</h4>
     </div>
     <div class="name">
-        <legend>Name:</legend>
-        <input type="text" placeholder="Dein Name" id="name">
+        <div class="grid_left">
+            <legend>Name:</legend>
+        </div>
+        <div class="grid_right">
+            <input type="text" placeholder="Dein Name" id="name">
+        </div>
     </div>
     <div class="email">
-        <legend>Email:</legend>
-        <input type="email" placeholder="Deine Email" id="email">
+        <div class="grid_left">
+            <legend>Email:</legend>
+        </div>
+        <div class="grid_right">
+            <input type="email" placeholder="Deine Email" id="email">
+        </div>
     </div>
     <div class="bewertung">
-        <legend>Auf einer Skala von 1 - 10, wie zufrieden bist du mit deinem TV-Gerät?</legend>
-        <input type="number" min="1" max="10" id="bewertung" placeholder="Bewerte von 1 bis 10">
+        <div class="grid_left">
+            <legend>Auf einer Skala von 1 - 10,<br> wie zufrieden bist du mit deinem TV-Gerät?</legend>
+        </div>
+        <div class="grid_right">
+            <input type="number" min="1" max="10" id="bewertung" placeholder="Bewerte von 1 bis 10">
+        </div>
     </div>
     <div class="dropdown">
-        <label for="dropdown">Wo nutzt du deinen TV?</label>
-        <select name="nutzungsort" id="dropdown">
-            <option value="wohnzimmer">Wohnzimmer</option>
-            <option value="schlafzimmer">Schlafzimmer</option>
-            <option value="esszimmer">Esszimmer</option>
-            <option value="gästezimmer">Gästezimmer</option>
-            <option value="garage">Garage</option>
-            <option value="garten">Garten</option>
-            <option value="wohnmobil">Wohnmobil</option>
-        </select>
+        <div class="grid_left">
+            <label for="dropdown">Wo nutzt du deinen TV?</label>
+        </div>
+        <div class="grid_right">
+            <select name="nutzungsort" id="dropdown">
+                <option value="wohnzimmer">Wohnzimmer</option>
+                <option value="schlafzimmer">Schlafzimmer</option>
+                <option value="esszimmer">Esszimmer</option>
+                <option value="gästezimmer">Gästezimmer</option>
+                <option value="garage">Garage</option>
+                <option value="garten">Garten</option>
+                <option value="wohnmobil">Wohnmobil</option>
+            </select>
+        </div>
     </div>
     <div class="radio">
-        <span>Zu welcher Tageszeit benutzt du den LG am liebsten/meisten?</span>
-        <label><input type="radio" name="tageszeit" id="radio" value="morgens"> Morgens</label>
-        <label><input type="radio" name="tageszeit" id="radio" value="mittags"> Mittags</label>
-        <label><input type="radio" name="tageszeit" id="radio" value="abends"> Abends</label>
-        <label><input type="radio" name="tageszeit" id="radio" value="nachts"> Nachts</label>
+        <div class="grid_left">
+            <span>Zu welcher Tageszeit benutzt du den LG am liebsten/meisten?</span>
+        </div>
+        <div class="grid_right">
+            <label><input type="radio" name="tageszeit" id="radio" value="morgens"> Morgens</label>
+            <label><input type="radio" name="tageszeit" id="radio" value="mittags"> Mittags</label>
+            <label><input type="radio" name="tageszeit" id="radio" value="abends"> Abends</label>
+            <label><input type="radio" name="tageszeit" id="radio" value="nachts"> Nachts</label>
+        </div>
     </div>
     <div class="checkbox">
-        <span>Was sind deine Lieblingsfeater´s?</span>
-        <label><input type="checkbox" name="feater" id="checkbox" value="4k"> 4K</label>
-        <label><input type="checkbox" name="feater" id="checkbox" value="hdr"> HDR</label>
-        <label><input type="checkbox" name="feater" id="checkbox" value="dolby"> Dolby Vision</label>
-        <label><input type="checkbox" name="feater" id="checkbox" value="smart"> Smart TV</label>
-        <label><input type="checkbox" name="feater" id="checkbox" value="gaming"> Gaming</label>
+        <div class="grid_left">
+            <span>Was sind deine Lieblingsfeater´s?</span>
+        </div>
+        <div class="grid_right">
+            <label><input type="checkbox" name="feater" id="checkbox" value="4k"> 4K</label>
+            <label><input type="checkbox" name="feater" id="checkbox" value="hdr"> HDR</label>
+            <label><input type="checkbox" name="feater" id="checkbox" value="dolby"> Dolby Vision</label>
+            <label><input type="checkbox" name="feater" id="checkbox" value="smart"> Smart TV</label>
+            <label><input type="checkbox" name="feater" id="checkbox" value="gaming"> Gaming</label>
+        </div>
     </div>
     <div class="experience">
-        <label for="experience">Erzähle uns deine positivste Erfahrung mit diesem Gerät.</label>
-        <textarea maxlength="1000" rows="3" class="textarea" name="experience" id="experience"  placeholder="Deine Erfahrung..."></textarea>
+        <div class="grid_left">
+            <label for="experience">Erzähle uns deine positivste Erfahrung mit diesem Gerät.</label>
+        </div>
+        <div class="grid_right">
+            <textarea maxlength="1000" rows="3" class="textarea" name="experience" id="experience"  placeholder="Deine Erfahrung..."></textarea>
+        </div>
     </div>
     <div class="submit">
         <button>Senden</button>
