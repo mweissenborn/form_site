@@ -98,7 +98,7 @@ div {
     gap: var(--spacing-xs);
     margin-left: var(--spacing-sm);
      margin-right: var(--spacing-sm);
-     max-width: none
+  
 }
 
 .bewertung input {
@@ -154,7 +154,7 @@ div {
      margin-right: var(--spacing-sm);
 }
 
-#experience {
+.textarea {
     width: 80%;
     max-width: 300px;
     margin-left: 0.4rem;
@@ -195,10 +195,16 @@ button:hover {
     .name, .email, .bewertung, .dropdown, .radio, .checkbox, .experience {
         display: grid;
         grid-template-columns: 45% 1fr;
+         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: none;
     }
 
     .grid_left {
+        text-align: right;
         align-items: end;
+        margin: 0 10px 0 40px;
     }
     .grid_right {
         align-items: start;
